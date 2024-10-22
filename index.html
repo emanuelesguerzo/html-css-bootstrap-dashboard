@@ -20,24 +20,65 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+            <!-- Fluid Container -->
             <div class="container-fluid">
+
+                <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <img width="60px" src="./img/duck.png" alt="Duck Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- /Logo -->
+
+                <!-- Hamburger Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
-                        <a class="nav-link" href="#">Anagrafica Utenti</a>
-                        <a class="nav-link" href="#">Storico Prestiti</a>
-                        <a class="nav-link" href="#">Help</a>
-                    </div>
+                <!-- /Hamburger Button -->
+
+                <!-- Collapsable -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <!-- Navbar List -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Catalogo Libri
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Anagrafica Utenti
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Storico Prestiti
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /Navbar List -->
+
+                    <!-- Searchbar -->
+                    <form class="d-flex" role="search">
+                        <input data-bs-theme="light" class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                    <!-- /Searchbar -->
+
                 </div>
+                <!-- /Collapsable -->
+
             </div>
+            <!-- /Fluid Container -->
+
         </nav>
-        <!-- /Navbar -->
+        <!-- Navbar -->
 
     </header>
     <!-- /HEADER -->
@@ -48,18 +89,23 @@
         <!-- Container -->
         <div class="container">
 
-            <div class="d-flex justify-content-between py-3 align-items-center">
-                <h1 class="fw-normal">Catalogo Libri</h1>
-                <div class="btn btn-primary btn-lg rounded text-light">
-                    Aggiungi Libro
-                </div>
-            </div>
+            <!-- Row -->
+            <div class="row">
 
-            <!-- Table -->
-            <table class="table table-striped">
+                <!-- Col -->
+                <div class="col-12 col-lg-9">
+                    <div class="d-flex justify-content-between py-3 align-items-center">
+                        <h1 class="fw-normal">Catalogo Libri</h1>
+                        <div class="btn btn-primary btn-lg rounded text-light">
+                            Aggiungi Libro
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <table class="col-12 col-lg-8 table table-striped">
                 <thead>
                     <tr class="">
-                        <th colspan="1" scope="col">Titolo</th>
+                        <th scope="col">Titolo</th>
                         <th class="d-none d-md-table-cell" scope="col">Data prestito</th>
                         <th scope="col">Stato</th>
                         <th class="text-center" scope="col">Azioni</th>
@@ -69,10 +115,10 @@
 
                     <!-- Movie 1 -->
                     <tr>
-                        <td colspan="1" scope="row">I pilastri della terra</td>
+                        <td scope="row">I pilastri della terra</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
-                            <div class="badge text-bg-success">
+                            <div class="badge text-bg-success ">
                                 Disponibile
                             </div>
                         </td>
@@ -89,7 +135,7 @@
 
                     <!-- Movie 2 -->
                     <tr>
-                        <td colspan="1" scope="row">I promessi sposi</td>
+                        <td scope="row">I promessi sposi</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-success">
@@ -109,7 +155,7 @@
 
                     <!-- Movie 3 -->
                     <tr>
-                        <td colspan="1" scope="row">Il signore degli anelli</td>
+                        <td scope="row">Il signore degli anelli</td>
                         <td class="d-none d-md-table-cell">18/10/2023</td>
                         <td>
                             <div class="badge text-light bg-warning">
@@ -129,7 +175,7 @@
 
                     <!-- Movie 4 -->
                     <tr>
-                        <td colspan="1" scope="row">Harry Potter e la pietra filosofale</td>
+                        <td scope="row">Harry Potter e la pietra filosofale</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-success">
@@ -149,7 +195,7 @@
 
                     <!-- Movie 5 -->
                     <tr>
-                        <td colspan="1" scope="row">Il codice Da Vinci</td>
+                        <td scope="row">Il codice Da Vinci</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-danger">
@@ -169,7 +215,7 @@
 
                     <!-- Movie 6 -->
                     <tr>
-                        <td colspan="1" scope="row">Shining</td>
+                        <td scope="row">Shining</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-success">
@@ -189,7 +235,7 @@
 
                     <!-- Movie 7 -->
                     <tr>
-                        <td colspan="1" scope="row">La divina commedia</td>
+                        <td scope="row">La divina commedia</td>
                         <td class="d-none d-md-table-cell">21/09/2023</td>
                         <td>
                             <div class="badge text-light bg-warning">
@@ -209,7 +255,7 @@
 
                     <!-- Movie 8 -->
                     <tr>
-                        <td colspan="1" scope="row">Il trono di spade</td>
+                        <td scope="row">Il trono di spade</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-success">
@@ -229,7 +275,7 @@
 
                     <!-- Movie 9 -->
                     <tr>
-                        <td colspan="1" scope="row">Il mondo di Sofia</td>
+                        <td scope="row">Il mondo di Sofia</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-danger">
@@ -249,7 +295,7 @@
 
                     <!-- Movie 10 -->
                     <tr>
-                        <td colspan="1" scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
                         <td class="d-none d-md-table-cell">25/07/2023</td>
                         <td>
                             <div class="badge text-light bg-warning">
@@ -269,7 +315,7 @@
 
                     <!-- Movie 11 -->
                     <tr>
-                        <td colspan="1" scope="row">Il piccolo principe</td>
+                        <td scope="row">Il piccolo principe</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-success">
@@ -289,7 +335,7 @@
 
                     <!-- Movie 12 -->
                     <tr>
-                        <td colspan="1" scope="row">La storia infinita</td>
+                        <td scope="row">La storia infinita</td>
                         <td class="d-none d-md-table-cell">-</td>
                         <td>
                             <div class="badge text-bg-success">
@@ -307,22 +353,106 @@
                     </tr>
                     <!-- /Movie 12 -->
 
-
-
                 </tbody>
-              </table>
-            <!-- /Table -->
 
+                    </table>
+                    <!-- /Table -->
+                </div>
+                <!-- /Col -->
 
+                <!-- BONUS -->
+                <div class="bonus px-0 col-12 col-lg-3 pt-3">
 
+                    <!-- Todo -->
+                    <div class="card bg-light mb-3">
+                    <div class="card-header fs-4">
+                        Todo
+                    </div>
+                    <div class="card-body bg-white">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Chiamare la segreteria
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Mandare avvisi prestiti scaduti
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                Ordinare nuovi libri
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- Todo -->
 
+                    <!-- FAQ -->
+                    <div class="card bg-light mb-3">
+                    <div class="card-header fs-4">F.A.Q.</div>
+                    <div class="card-body bg-white">
 
+                        <!-- ACCORDION -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
 
+                            <!-- Accordion Item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Come aggiungere un nuovo libro?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Per aggiungere un nuovo libro clicca sul tasto "Aggiungi Libro" in cima alla pagina.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Accordion Item -->
 
+                            <!-- Accordion Item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Psssht! E' un segreto!
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion Item -->
+                            
+                            <!-- Accordion Item -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Questa Dashboard e' perfettamente funzionante su mobile.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Accordion Item -->
 
+                        </div>
+                        <!-- ACCORDION -->
 
+                    </div>
+                    
+                    </div>
+                    <!-- /FAQ -->
 
-
+                </div>
+                <!-- /BONUS -->
+                
+            </div>
+            <!-- /Row -->
 
         </div>
         <!-- /Container -->
@@ -330,8 +460,6 @@
     </main>
     <!-- /MAIN -->
     
-
-
 <!-- Bootstrap Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
