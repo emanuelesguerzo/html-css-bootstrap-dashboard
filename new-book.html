@@ -14,7 +14,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Document</title>
+    <title>Nuovo Libro</title>
 </head>
 
 <body>
@@ -155,8 +155,7 @@
                     <div class="col-12 col-lg-3 flex-grow-1">
                         <div class="mb-3">
                             <label for="publish-year" class="form-label">Anno di Pubblicazione</label>
-                            <input type="text" class="form-control" id="publish-year"
-                                placeholder="Inserisci l'anno">
+                            <input type="text" class="form-control" id="publish-year" placeholder="Inserisci l'anno">
                         </div>
                     </div>
                     <!-- /Col -->
@@ -165,20 +164,44 @@
                     <div class="col-12 col-lg-3 flex-grow-1">
                         <div class="mb-4">
                             <label for="isbn" class="form-label">ISBN#</label>
-                            <input type="text" class="form-control" id="isbn"
-                                placeholder="Inserisci il codice ISBN#">
+                            <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
                         </div>
                     </div>
                     <!-- /Col -->
 
-                    
+                </div>
+                <!-- /Row -->
+
+                <hr>
+
+                <!-- Row -->
+                <div class="row">
+
+                    <!-- Col -->
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="notes" class="form-label">Note</label>
+                            <textarea placeholder="Inserisci eventuali note sul libro" class="form-control" id="notes" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="digital">
+                            <label class="form-check-label" for="digital">Disponibile anche in digitale</label>
+                        </div>
+                    </div>
+                    <!-- /Col -->
+
+                    <!-- Col -->
+                    <div class="col-12 py-3">
+                        <button class="btn btn-primary" type="submit">Aggiungi libro</button>
+                    </div>
+                    <!-- /Col -->
 
                 </div>
                 <!-- /Row -->
-                <hr>
+
             </div>
             <!-- Container -->
-            
+
         </form>
         <!-- /FORM -->
 
