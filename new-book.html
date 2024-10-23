@@ -98,7 +98,7 @@
 
             <div class="container">
                 <!-- Row -->
-                <div class="row justify-content-center">
+                <div class="row">
 
                     <h1 class="py-4">Nuovo Libro</h1>
 
@@ -123,7 +123,7 @@
                     <!-- /Col -->
 
                     <!-- Col -->
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <label for="book-title" class="form-label">Titolo</label>
                         <input type="text" placeholder="Inserisci il titolo del libro" id="book-title"
                             class="form-control" aria-describedby="textHelpBlock">
@@ -139,22 +139,46 @@
                 <!-- Row -->
                 <div class="row">
 
-                    <div class="col-12">
-
+                    <!-- Col -->
+                    <div class="col-12 col-lg-3 flex-grow-1 mb-3">
+                        <label for="genre" class="form-label">Genere</label>
+                        <select id="genre" class="form-select" aria-label="Select book genre">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Action</option>
+                            <option value="2">Avventura</option>
+                            <option value="3">Romantico</option>
+                        </select>
                     </div>
-                    <div class="col-12">
+                    <!-- Col -->
 
+                    <!-- /Col -->
+                    <div class="col-12 col-lg-3 flex-grow-1">
+                        <div class="mb-3">
+                            <label for="publish-year" class="form-label">Anno di Pubblicazione</label>
+                            <input type="text" class="form-control" id="publish-year"
+                                placeholder="Inserisci l'anno">
+                        </div>
                     </div>
-                    <div class="col-12">
+                    <!-- /Col -->
 
+                    <!-- Col -->
+                    <div class="col-12 col-lg-3 flex-grow-1">
+                        <div class="mb-4">
+                            <label for="isbn" class="form-label">ISBN#</label>
+                            <input type="text" class="form-control" id="isbn"
+                                placeholder="Inserisci il codice ISBN#">
+                        </div>
                     </div>
+                    <!-- /Col -->
+
+                    
 
                 </div>
                 <!-- /Row -->
-                 
+                <hr>
             </div>
             <!-- Container -->
-
+            
         </form>
         <!-- /FORM -->
 
